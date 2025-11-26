@@ -1,5 +1,6 @@
 {
-  "buildCommand": "npm run build-all",
+  "installCommand": "npm install --ignore-scripts",
+  "buildCommand": "npm run build",
   "framework": null,
   "outputDirectory": "public",
   "redirects": [
