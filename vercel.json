@@ -1,7 +1,11 @@
 {
-  "installCommand": "npm install --ignore-scripts",
-  "buildCommand": "npm run build",
+  "buildCommand": "npm run build-all",
   "framework": null,
+  "outputDirectory": "public",
+  "redirects": [
+    { "source": "/", "destination": "/about", "permanent": true },
+    { "source": "/guide", "destination": "/about/guide", "permanent": true }
+  ],
   "rewrites": [
     {
       "source": "/api/pkg.tgz",
