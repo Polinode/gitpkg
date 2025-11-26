@@ -1,6 +1,7 @@
 {
   "installCommand": "npm install --ignore-scripts",
   "buildCommand": "echo 'skip'",
+  "outputDirectory": ".",
   "framework": null,
   "rewrites": [
     {
