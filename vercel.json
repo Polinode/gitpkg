@@ -1,6 +1,6 @@
 {
   "installCommand": "npm install --ignore-scripts",
-  "buildCommand": "echo 'skip'",
+  "buildCommand": "npm run build -w @gitpkg/core",
   "outputDirectory": ".",
   "framework": null,
   "rewrites": [
@@ -9,7 +9,7 @@
       "destination": "/api/pkg.ts"
     },
     {
-      "source": "/((?!(?:about|api)/)(?:[^?]+/)+[^?]+)(\\?.+)?",
+      "source": "/((?!(?:about|api)/)(?:[^?]+/)+[^?]+)(\\?.*)?",
       "destination": "/api/pkg-from-url"
     }
   ]
